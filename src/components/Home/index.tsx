@@ -134,7 +134,7 @@ const Hero = () => {
 
         <div className="md:col-span-6 col-span-12 relative ">
           <img
-            src="images\hero\hero-image.png"
+            src="public\images\hero\hero-image.png"
             alt='hero-image'
             width={350}
             height={150}
