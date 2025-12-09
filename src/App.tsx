@@ -38,7 +38,7 @@ function App() {
            className="text-white font-bold text-3xl sm:text-8xl lg:text-5xl mt-3"
 
           >
-            Passionate Developer Crafting Solutions for the Future
+            Passionate Developer Crafting Solutions for the Future sjdahflkadsflksdflksalf
           </h2>
 
           {/* Description */}
