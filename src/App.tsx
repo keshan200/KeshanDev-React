@@ -28,7 +28,7 @@ function App() {
             className="text-(--accent-color) font-bold  text-lg flex items-center"
           >
             <span className="text-xl text-(--accent-color) px-2">&#9733;</span>
-            MY STORY
+            MY STORY HI HOW ARE YU
             <span className="text-xl text-(--accent-color) px-2">&#9733;</span>
           </h3>
 
