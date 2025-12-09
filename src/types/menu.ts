@@ -1,5 +1,5 @@
 export type SubmenuItem = {
-    path: ReactNode;
+    path: string;
     label: string;
     href: string;
   };    

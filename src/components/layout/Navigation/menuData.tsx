@@ -12,11 +12,11 @@ export const headerData: HeaderItem[] = [
     submenu: [
       {
         label: "Blog list", href: "/blog",
-        path: undefined
+        path: "/"
       },
       {
         label: "Blog details", href: "/blog/Blog_1",
-        path: undefined
+        path: "/"
       },
     ],
   },
