@@ -97,9 +97,34 @@
 
   body {
   @apply overflow-x-hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  
  
 }
+/* index.css */
+html, body, #root {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+}
+
+
+
+
+
+
 
 @layer base {
   section {
@@ -156,29 +181,6 @@
 }
 
 
-/* Scrollbar Styles */
-::-webkit-scrollbar {
-  width: 5px;
- 
-}
 
-::-webkit-scrollbar-track {
-  background: #ffffff; /* dark background */
-}
 
-::-webkit-scrollbar-thumb {
-  background: #99999a; /* your primary color */
-  border-radius: 10px;
-}
 
-::-webkit-scrollbar-thumb:hover {
-  background: #1e56c4;
-}
-
-.dark ::-webkit-scrollbar-track {
-  background: #000f30; /* dark mode track */
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: #e3ede7; /* success color in dark mode */
-}
