@@ -8,6 +8,7 @@ import Counter from './components/Home/Counter/index.tsx'
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/700.css";
+import Services from './components/Home/Services/index.tsx'
 
 
 
@@ -16,7 +17,8 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Layout>
         <Hero />
-        <Counter isColorMode={false}></Counter>
+        <Counter isColorMode={false} />
+        <Services />
       </Layout>
     </BrowserRouter>
   </StrictMode>,
