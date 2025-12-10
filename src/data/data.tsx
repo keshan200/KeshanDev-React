@@ -50,6 +50,12 @@ export const Servicebox = [
         title: 'UX & Products Design',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
+
+      {
+        icon: '/images/services/ux-design-product_2.svg',
+        title: 'Web Development',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
 ]
 
 export const portfolioinfo = [

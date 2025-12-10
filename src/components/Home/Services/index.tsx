@@ -23,7 +23,7 @@ const Services = () => {
           data-aos-duration='1000'>
           Services specifically designed to meet your business needs
         </h2>
-        <div className='grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-7'>
+        <div className='grid md:grid-cols-16 sm:grid-cols-8 grid-cols-1 gap-7'>
           {Servicebox.map((item, index) => (
             <div
               key={index}
@@ -39,7 +39,7 @@ const Services = () => {
                 height={0}
                 className='w-10 h-10 bg-no-repeat inline-block bg-contain'
               />
-              <h3 className='max-w-44 mx-auto text-2xl font-bold'>
+              <h3 className='max-w-44 mx-auto text-2xl font-bold dark:text-white'>
                 {item.title}
               </h3>
               <p className='dark:text-white/50 text-base font-normal'>
