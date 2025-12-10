@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { GraduationCap, Award, BookOpen } from 'lucide-react'
 
 // Define the interface for Education items
@@ -36,7 +36,8 @@ const EducationData: EducationItem[] = [
   }
 ]
 
-const Education = ({ isColorMode = false }: { isColorMode?: boolean }) => {
+const Education = ({ }: { _isColorMode?: boolean }) => {
+
   const [educationItems, setEducationItems] = useState<EducationItem[]>([])
 
   useEffect(() => {
