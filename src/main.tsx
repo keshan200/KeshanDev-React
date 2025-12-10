@@ -9,6 +9,9 @@ import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/700.css";
 import Services from './components/Home/Services/index.tsx'
+import TechStackMarquee from './components/Home/Tech/index.tsx'
+import WorkExperience from './components/Home/WorkExp/index.tsx'
+import Education from './components/Home/EduSection/index.tsx'
 
 
 
@@ -19,6 +22,9 @@ createRoot(document.getElementById('root')!).render(
         <Hero />
         <Counter isColorMode={false} />
         <Services />
+        <TechStackMarquee />
+        <WorkExperience />
+        <Education/>
       </Layout>
     </BrowserRouter>
   </StrictMode>,
