@@ -1,4 +1,7 @@
+'use client'
+
 import Slider from 'react-slick'
+
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { portfolioinfo } from '../../../../../data/data'
@@ -48,13 +51,12 @@ const PortfolioCard = () => {
   }
 
   return (
-    <div id='portfolio' className='dark:bg-darkmode'>
+  <div id='portfolio' className='dark:bg-darkmode'>
       <div className='lg:px-9 m-auto px-0 max-w-[1600px] slider-container'>
         <Slider {...settings}>
           {portfolioinfo.map((item, index) => (
             <a key={index} href={`/portfolio/${item.slug}`} >
-              <div
-                className={`px-3 group ${index % 2 !== 0 ? 'lg:mt-24 ' : ''}`}>
+              <div className={`px-3 group ${index % 2 !== 0 ? 'lg:mt-24 ' : ''}`}>
                 <div className='relative overflow-hidden rounded-lg'>
                   <img
                     src={item.image}
@@ -62,15 +64,18 @@ const PortfolioCard = () => {
                     width={1200}
                     height={800}
                     style={{ width: '100%', height: 'auto' }}
-                    className='group-hover:scale-110 group-hover:cursor-pointer transition-all duration-500'
+                    className='group-hover:scale-110 transition-all duration-500'
                   />
+                  {/* Text overlay at bottom */}
+                  <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300'>
+                    <h4 className='text-white font-semibold text-base mb-1'>
+                      {item.title}
+                    </h4>
+                    <p className='text-white/80 text-sm'>
+                      {item.info}
+                    </p>
+                  </div>
                 </div>
-                <h4 className='pb-1 pt-9 group-hover:text-primary group-hover:cursor-pointer text-2xl text-midnight_text font-bold dark:text-white'>
-                  {item.title}
-                </h4>
-                <p className='text-secondary font-normal text-lg group-hover:text-primary group-hover:cursor-pointer dark:text-white/50'>
-                  {item.info}
-                </p>
               </div>
             </a>
           ))}
