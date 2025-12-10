@@ -2,7 +2,7 @@
 
 
 
-@import 'tailwindcss';
+
 
 
 
@@ -83,21 +83,22 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 
-body {
-  @apply overflow-x-hidden;
- 
-}
+
+
 
 
 @layer base {
   html {
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
+
+  body {
+  @apply overflow-x-hidden;
+ 
+}
 }
 
 @layer base {
@@ -152,4 +153,32 @@ body {
 
 .blog-details h3 {
   @apply mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
+}
+
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 5px;
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #99999a; /* your primary color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e56c4;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #000f30; /* dark mode track */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #e3ede7; /* success color in dark mode */
 }

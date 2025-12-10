@@ -8,6 +8,7 @@ const Aoscompo = ({children}:any) => {
         AOS.init({
             duration: 800,
             once: false,
+             anchorPlacement: 'top-bottom',
         })
     }, [])
   return (

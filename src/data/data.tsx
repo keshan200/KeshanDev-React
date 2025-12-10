@@ -10,19 +10,19 @@ export const menuItems = [
 export const count = [
     {
         icon: "/images/counter/star.svg",
-        value: "4.86",
+        value: "1 +",
         description: "Acadamic Expereince",
         subDescription: "Building scalable and efficient systems"
     },
     {
         icon: "/images/counter/admin.svg",
-        value: "364",
+        value: "10+",
          description: "Completed Projects",
          subDescription: "Full-stack web applications and solutions"
     },
     {
         icon: "/images/counter/bag.svg",
-        value: "45M+",
+        value: "10+",
         description: "Tech Stack Mastered",
          subDescription: "React, Node.js, TypeScript, MongoDB, and more"
     },

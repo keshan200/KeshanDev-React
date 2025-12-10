@@ -14,8 +14,8 @@ const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
           {count.map((item, index) => (
             <div
               key={index}
-              className='flex flex-col items-center '
-            
+              className='flex flex-col items-center gap-[0.875rem]'
+              data-aos='fade-up'
               data-aos-delay={`${index * 200}`}
               data-aos-duration='1000'>
               <img
@@ -23,15 +23,17 @@ const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
                 alt='icon'
                 width={30}
                 height={30}
-                srcSet="logo-1x.png 1x, logo-2x.png 2x, logo-3x.png 3x"
+                md:justify-between
+
+               
               />
               <span className='text-5xl font-semibold text-midnight_text dark:text-white'>
                 {item.value}
               </span>
-              <p className='text-base text-grey text-center  w-full dark:text-white/50'>
+              <p className='text-base text-grey text-center max-w-[17.8125rem] w-full dark:text-white/50'>
                 {item.description}
               </p>
-                <p className='text-base text-grey text-center  w-full dark:text-white/50'>
+                <p className='text-base text-grey text-center max-w-[17.8125rem] w-full dark:text-white/50'>
                 {item.subDescription}
               </p>
             </div>
