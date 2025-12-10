@@ -11,17 +11,20 @@ export const count = [
     {
         icon: "/images/counter/star.svg",
         value: "4.86",
-        description: "Out of 5 stars from 3896 reviews on Google platform",
+        description: "Acadamic Expereince",
+        subDescription: "Building scalable and efficient systems"
     },
     {
         icon: "/images/counter/admin.svg",
         value: "364",
-        description: "Client testimonials received in the year 2021",
+         description: "Completed Projects",
+         subDescription: "Full-stack web applications and solutions"
     },
     {
         icon: "/images/counter/bag.svg",
         value: "45M+",
-        description: "Revenue generated through new projects & marketing",
+        description: "Tech Stack Mastered",
+         subDescription: "React, Node.js, TypeScript, MongoDB, and more"
     },
 ];
 

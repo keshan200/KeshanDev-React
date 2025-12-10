@@ -1,17 +1,19 @@
 
 
+
+
 function App() {
   
 
   return (
     <>
-       <main id="About-page" className="w-full bg-black py-12 px-4">
+     <main id="About-page" className="w-full bg-black py-12 px-4">
       <section className="flex flex-col md:flex-row justify-evenly items-center gap-10 md:gap-10">
        
         {/* Image Section */}
         <div data-aos="zoom-in-up">
           <img
-            
+           
             alt="Keshan"
             className="w-[450px] rounded-2xl max-w-full"
           />
@@ -28,7 +30,7 @@ function App() {
             className="text-(--accent-color) font-bold  text-lg flex items-center"
           >
             <span className="text-xl text-(--accent-color) px-2">&#9733;</span>
-            MY STORY HI HOW ARE YU
+            MY STORY
             <span className="text-xl text-(--accent-color) px-2">&#9733;</span>
           </h3>
 
@@ -38,7 +40,7 @@ function App() {
            className="text-white font-bold text-3xl sm:text-8xl lg:text-5xl mt-3"
 
           >
-            Passionate Developer Crafting Solutions for the Future sjdahflkadsflksdflksalf
+            Passionate Developer Crafting Solutions for the Future
           </h2>
 
           {/* Description */}
@@ -66,8 +68,7 @@ function App() {
         </div>
       </section>
     </main>
-        
-    </>
+     </>
   )
 }
 
