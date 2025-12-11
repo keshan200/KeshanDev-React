@@ -173,7 +173,7 @@ export const EducationData: EducationItem[] = [
 export const techStack = [
   { 
     name: 'Java', 
-    icon: 'https://img.icons8.com/?size=100&id=2572&format=png&color=3b82f6', 
+    icon: 'https://img.icons8.com/?size=100&id=13679&format=png&color=000000', 
     color: '' 
   },
   { 
@@ -188,7 +188,7 @@ export const techStack = [
   },
   { 
     name: 'Java Script', 
-    icon: 'https://img.icons8.com/?size=100&id=39854&format=png&color=10b981', 
+    icon: 'https://img.icons8.com/?size=100&id=108784&format=png&color=000000', 
     color: '' 
   },
   { 
@@ -198,7 +198,7 @@ export const techStack = [
   },
   { 
     name: 'HTML', 
-    icon: 'https://img.icons8.com/?size=100&id=23028&format=png&color=3b82f6', 
+    icon: 'https://img.icons8.com/?size=100&id=20909&format=png&color=000000', 
     color: '' 
   },
   { 
@@ -239,7 +239,7 @@ export const techStack = [
   },
   { 
     name: 'Mongo DB', 
-    icon: 'https://img.icons8.com/?size=100&id=undefined&format=png&color=3b82f6', 
+    icon: 'https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000', 
     color: '' 
   },
   { 
