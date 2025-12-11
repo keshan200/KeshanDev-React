@@ -1,3 +1,5 @@
+import type { EducationItem } from "../types/Education";
+
 export const menuItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
@@ -35,27 +37,28 @@ export const Progress = [
 ];
 
 export const Servicebox = [
-    {
-        icon: '/images/services/ux-design-product_1.svg',
-        title: 'UX & Product Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-        icon: '/images/services/perfomance-optimization.svg',
-        title: 'Performance Optimization',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-        icon: '/images/services/ux-design-product_2.svg',
-        title: 'UX & Products Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
+   {
+    icon: '/images/services/ux-design-product_1.svg',
+    title: 'UX & Product Design',
+    description: 'We create intuitive and user-friendly designs that enhance the overall user experience and ensure product success.',
+},
+{
+    icon: '/images/services/perfomance-optimization.svg',
+    title: 'Performance Optimization',
+    description: 'We improve website and app performance by optimizing speed, responsiveness, and efficiency to provide a seamless user experience.',
+},
 
-      {
-        icon: '/images/services/ux-design-product_2.svg',
-        title: 'Web Development',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
+    {
+    icon: '/images/services/ux-design-product_2.svg',
+    title: 'Mobile Application Development',
+    description: 'We create fast, secure, and user-friendly mobile applications for iOS and Android, tailored to your business needs.',
+},
+{
+    icon: '/images/services/ux-design-product_2.svg',
+    title: 'Full-Stack Web Development',
+    description: 'We build responsive, scalable, and modern websites using the latest technologies, ensuring optimal performance and user experience.',
+},
+
 ]
 
 export const portfolioinfo = [
@@ -141,3 +144,112 @@ export const portfolioinfo = [
     },
     
 ]
+
+
+export const EducationData: EducationItem[] = [
+  {
+    degree: 'BSc(Hons) Computer Science',
+    institution: 'University of Greater Manchester UK',
+    period: '2026 - Present',
+    description: 'Focused on software engineering, algorithms, and web development. Graduated with honors.',
+    icon: 'graduation'
+  },
+  {
+    degree: 'Higher National Diploma in Software Engineering',
+    institution: 'IJSE - Institute of Software Engineering',
+    period: '2023 - 2025',
+    description: 'Intensive training in React, Node.js, and modern web technologies.',
+    icon: 'award'
+  },
+  {
+    degree: 'Higher School Education in Maths Stream',
+    institution: 'Sri Sangabodhi National College, Sri Lanka',
+    period: '2014 - 2018',
+    description: 'Science and Mathematics major with distinction in computer studies.',
+    icon: 'book'
+  }
+]
+
+export const techStack = [
+  { 
+    name: 'Java', 
+    icon: 'https://img.icons8.com/?size=100&id=2572&format=png&color=3b82f6', 
+    color: '' 
+  },
+  { 
+    name: 'Phython', 
+    icon: 'https://img.icons8.com/?size=100&id=12592&format=png&color=40C057', 
+    color: '' 
+  },
+  { 
+    name: 'C#', 
+    icon: 'https://img.icons8.com/?size=100&id=45490&format=png&color=000000', 
+    color: '' 
+  },
+  { 
+    name: 'Java Script', 
+    icon: 'https://img.icons8.com/?size=100&id=39854&format=png&color=10b981', 
+    color: '' 
+  },
+  { 
+    name: 'Type Script', 
+    icon: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000', 
+    color: '' 
+  },
+  { 
+    name: 'HTML', 
+    icon: 'https://img.icons8.com/?size=100&id=23028&format=png&color=3b82f6', 
+    color: '' 
+  },
+  { 
+    name: 'CSS', 
+    icon: 'https://img.icons8.com/?size=100&id=qTLQNQjXAvIV&format=png&color=10b981', 
+    color: '' 
+  },
+  { 
+    name: 'React', 
+    icon: 'https://img.icons8.com/?size=100&id=viH7JJy51bHj&format=png&color=3b82f6', 
+    color: '' 
+  },
+
+   { 
+    name: 'Spring Boot', 
+    icon: 'https://img.icons8.com/?size=100&id=90519&format=png&color=000000', 
+    color: '' 
+  },
+  { 
+    name: 'React Native', 
+    icon: 'https://img.icons8.com/?size=100&id=35989&format=png&color=3b82f6', 
+    color: '' 
+  },
+  { 
+    name: 'Node.js', 
+    icon: 'https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000', 
+    color: '' 
+  },
+  { 
+    name: 'Express.js', 
+    icon: 'https://img.icons8.com/?size=100&id=XIkDynN7Uo6f&format=png&color=3b82f6', 
+    color: '' 
+  },
+  { 
+    name: '.Net', 
+    icon: 'https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000', 
+    color: '' 
+  },
+  { 
+    name: 'Mongo DB', 
+    icon: 'https://img.icons8.com/?size=100&id=undefined&format=png&color=3b82f6', 
+    color: '' 
+  },
+  { 
+    name: 'MySql', 
+    icon: 'https://img.icons8.com/?size=100&id=T5LpxuqG34ra&format=png&color=40C057', 
+    color: '' 
+  },
+  { 
+    name: 'PostgreSQL', 
+    icon: 'https://img.icons8.com/?size=100&id=25010&format=png&color=3b82f6', 
+    color: '' 
+  },
+];

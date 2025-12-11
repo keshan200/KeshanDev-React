@@ -1,11 +1,11 @@
 import  { useState, useEffect } from 'react';
-import { Code2, Database, Palette, Boxes, Zap, Globe } from 'lucide-react';
+import { techStack } from '../../../data/data';
 
 const TechStackMarquee = () => {
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
-    // Check if dark mode is enabled in the system/browser
+    
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     setIsDark(darkModeMediaQuery.matches);
 
@@ -15,23 +15,13 @@ const TechStackMarquee = () => {
     return () => darkModeMediaQuery.removeEventListener('change', handleChange);
   }, []);
 
-  const techStack = [
-    { name: 'React', icon: Code2, color: 'text-primary' },
-    { name: 'Node.js', icon: Zap, color: 'text-success' },
-    { name: 'MongoDB', icon: Database, color: 'text-primary' },
-    { name: 'Tailwind CSS', icon: Palette, color: 'text-success' },
-    { name: 'Express', icon: Boxes, color: 'text-primary' },
-    { name: 'Next.js', icon: Globe, color: 'text-success' },
-    { name: 'TypeScript', icon: Code2, color: 'text-primary' },
-    { name: 'PostgreSQL', icon: Database, color: 'text-success' },
-  ];
 
   const duplicatedStack = [...techStack, ...techStack];
 
   return (
     <div className={isDark ? 'dark' : ''}>
       <section className='bg-section dark:bg-darklight'  style={{ padding: '15px' }} id='techstack'>
-        <div className='container mx-auto max-w-6xl px-4'>
+        <div className='container mx-auto max-w-60xl px-4'>
           {/* Header */}
           <div
             className='flex gap-2 items-center justify-center'
@@ -61,7 +51,7 @@ const TechStackMarquee = () => {
             {/* Marquee */}
             <div className='flex animate-marquee'>
               {duplicatedStack.map((tech, index) => {
-                const Icon = tech.icon;
+              
                 return (
                   <div
                     key={index}
@@ -71,7 +61,7 @@ const TechStackMarquee = () => {
                     data-aos-duration='1000'>
                     <div className='flex flex-col items-center space-y-3 transition-transform duration-300 group-hover:scale-110'>
                       <div className={`p-2 bg-white dark:bg-darkmode rounded-xl shadow-service border border-transparent group-hover:border-primary transition-all duration-300 ${tech.color}`}>
-                        <Icon size={40} strokeWidth={1.5} />
+                        <img src={tech.icon} alt={tech.name} className='w-10 h-10' />
                       </div>
                       <span className='text-midnight_text dark:text-white font-medium text-sm whitespace-nowrap'>
                         {tech.name}
@@ -104,7 +94,7 @@ const TechStackMarquee = () => {
           }
           
           .animate-marquee {
-            animation: marquee 30s linear infinite;
+            animation: marquee 60s linear infinite;
           }
           
           .animate-marquee:hover {

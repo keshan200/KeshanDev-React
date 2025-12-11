@@ -1,40 +1,9 @@
 'use client'
 import  { useEffect, useState } from 'react'
 import { GraduationCap, Award, BookOpen } from 'lucide-react'
+import type { EducationItem } from '../../../types/Education'
+import { EducationData } from '../../../data/data'
 
-// Define the interface for Education items
-interface EducationItem {
-  degree: string
-  institution: string
-  period: string
-  description: string
-  icon: 'graduation' | 'award' | 'book'
-}
-
-// Sample education data
-const EducationData: EducationItem[] = [
-  {
-    degree: 'BSc(Hons) Computer Science',
-    institution: 'University of Greater Manchester UK',
-    period: '2026 - Present',
-    description: 'Focused on software engineering, algorithms, and web development. Graduated with honors.',
-    icon: 'graduation'
-  },
-  {
-    degree: 'Higher National Diploma in Software Engineering',
-    institution: 'IJSE - Institute of Software Engineering',
-    period: '2023 - 2025',
-    description: 'Intensive training in React, Node.js, and modern web technologies.',
-    icon: 'award'
-  },
-  {
-    degree: 'Higher School Education in Maths Stream',
-    institution: 'Sri Sangabodhi National College, Sri Lanka',
-    period: '2014 - 2018',
-    description: 'Science and Mathematics major with distinction in computer studies.',
-    icon: 'book'
-  }
-]
 
 const Education = ({ }: { _isColorMode?: boolean }) => {
 

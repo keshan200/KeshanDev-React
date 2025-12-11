@@ -2,6 +2,7 @@ import React from 'react';
 import { Briefcase, MapPin, Calendar, ArrowUpRight } from 'lucide-react';
 
 interface ExperienceItem {
+  companyImage:string;
   position: string;
   company: string;
   type: string;
@@ -13,6 +14,7 @@ interface ExperienceItem {
 
 const ExperienceData: ExperienceItem[] = [
   {
+    companyImage : '/images/WorkExp/logo.png',
     position: 'Software Engineer Intern',
     company: 'Synexis',
     type: 'Internship',
@@ -63,14 +65,16 @@ const WorkExperience = () => {
                 className='md:col-span-4 col-span-12'>
                 <div className='bg-white dark:bg-darkmode rounded-lg shadow-service p-5 h-full'>
                   <div className='flex items-center gap-3 mb-4'>
-                    <div className='w-12 h-12 rounded-full bg-gradient-to-br from-primary to-success flex items-center justify-center text-white font-bold text-xl'>
-                      {item.company.charAt(0)}
-                    </div>
+                    <img
+    src={item.companyImage}
+    alt={item.company}
+    className="w-12 h-12 rounded-full object-cover"
+  />
                     <div>
                       <h3 className='font-bold text-midnight_text dark:text-white text-lg'>
                         {item.company}
                       </h3>
-                      <span className='text-xs text-midnight_text/60 dark:text-white/60'>
+                      <span className='text-sm text-midnight_text/60 dark:text-white/60'>
                         {item.type}
                       </span>
                     </div>
@@ -79,13 +83,13 @@ const WorkExperience = () => {
                   <div className='space-y-3 mb-4'>
                     <div className='flex items-start gap-2'>
                       <Calendar className='w-4 h-4 text-primary mt-0.5 flex-shrink-0' />
-                      <span className='text-xs text-midnight_text/70 dark:text-white/70'>
+                      <span className='text-sm text-midnight_text/70 dark:text-white/70'>
                         {item.period}
                       </span>
                     </div>
                     <div className='flex items-start gap-2'>
                       <MapPin className='w-4 h-4 text-success mt-0.5 flex-shrink-0' />
-                      <span className='text-xs text-midnight_text/70 dark:text-white/70'>
+                      <span className='text-sm text-midnight_text/70 dark:text-white/70'>
                         {item.location}
                       </span>
                     </div>
@@ -116,7 +120,7 @@ const WorkExperience = () => {
                         </h3>
                         <div className='flex items-center gap-2'>
                           <Briefcase className='w-4 h-4 text-primary' />
-                          <span className='text-sm text-midnight_text/70 dark:text-white/70'>
+                          <span className='text-md text-midnight_text/70 dark:text-white/70'>
                             Full-time Position
                           </span>
                         </div>

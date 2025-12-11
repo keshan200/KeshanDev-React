@@ -13,6 +13,7 @@ import TechStackMarquee from './components/Home/Tech/index.tsx'
 import WorkExperience from './components/Home/WorkExp/index.tsx'
 import Education from './components/Home/EduSection/index.tsx'
 import Portfolio from './components/Home/SharedCoponents/portfollio/index.tsx'
+import Contact from './components/Home/Contact/index.tsx'
 
 
 
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
         <WorkExperience />
         <Education/>
         <Portfolio />
+        <Contact/>
       </Layout>
     </BrowserRouter>
   </StrictMode>,

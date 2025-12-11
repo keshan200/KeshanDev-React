@@ -27,6 +27,12 @@
           "scrollbar-width: none"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }

@@ -42,7 +42,7 @@ const Services = () => {
               <h3 className='max-w-44 mx-auto text-2xl font-bold dark:text-white'>
                 {item.title}
               </h3>
-              <p className='dark:text-white/50 text-base font-normal'>
+              <p className='dark:text-white/60 text-base font-normal text-md'>
                 {item.description}
               </p>
               <a

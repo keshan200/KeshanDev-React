@@ -72,7 +72,7 @@ const Hero = () => {
   <div className='flex items-center mt-12 gap-4'>
   <div className='flex items-center'>
     <img
-       src="/images/hero/hero-profile-3.jpg"
+       src="/images/hero/Linkdin.png"
       alt='hero-image'
       width={40}
       height={40}
@@ -80,14 +80,14 @@ const Hero = () => {
       className='w-10 h-10 rounded-full border border-solid border-white -ml-0'
     />
     <img
-     src="/images/hero/hero-profile-3.jpg"
+     src="/images/hero/email.png"
       alt='hero-image'
       width={40}
       height={40}
       className='w-10 h-10 rounded-full border border-solid border-white -ml-3'
     />
     <img
-     src="/images/hero/hero-profile-3.jpg"
+     src="/images/hero/call.png"
       alt='hero-image'
       width={40}
       height={40}
@@ -96,14 +96,14 @@ const Hero = () => {
   </div>
 
   <div className='flex flex-col'>
-    <p className='text-sm font-normal text-grey max-w-56'>
+    <p className='text-md font-normal text-grey max-w-80'>
       Want to connect? Reach me via:
     </p>
 
-    <div className='flex items-center gap-4 mt-2'>
+    <div className='flex items-center gap-4 '>
       {/* LinkedIn */}
       <a
-        href='https://www.linkedin.com/in/keshan-silva'
+        href='https://www.linkedin.com/in/keshan-silva-104b6a2a9'
         target='_blank'
         className='flex items-center text-primary hover:text-blue-700 gap-1'
       >
@@ -112,7 +112,7 @@ const Hero = () => {
 
       {/* Email */}
       <a
-        href='mailto:your.email@example.com'
+        href="mailto:sachinthakeshan345@gmail.com"
         className='flex items-center text-primary hover:text-blue-700 gap-1'
       >
         <i className='fas fa-envelope text-lg'></i> Email
@@ -120,7 +120,7 @@ const Hero = () => {
 
       {/* Phone */}
       <a
-        href='tel:+94123456789'
+        href='tel:+94774510743'
         className='flex items-center text-primary hover:text-blue-700 gap-1'
       >
         <i className='fas fa-phone text-lg'></i> Call

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createContext, type Dispatch, type SetStateAction } from "react";
 import Header from "./Navigation";
 import Aoscompo from "../../Util/aos";
+import Footer from "./Footer";
 
 
 interface ThemeContextType {
@@ -37,6 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Aoscompo>
         <Header theme={theme} setTheme={setTheme} />
         {children}
+         <Footer />
       </Aoscompo>
     </ThemeContext.Provider>
   );
