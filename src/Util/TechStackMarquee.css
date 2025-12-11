@@ -1,0 +1,21 @@
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Continuous Marquee */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite; /* Adjust speed here */
+}
+
+/* Remove hover pause to keep continuous */
+.animate-marquee:hover {
+  animation-play-state: running; /* keep moving even on hover */
+}

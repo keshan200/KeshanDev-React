@@ -1,5 +1,7 @@
 import  { useState, useEffect } from 'react';
 import { techStack } from '../../../data/data';
+import '../../../Util/TechStackMarquee.css';
+
 
 const TechStackMarquee = () => {
   const [isDark, setIsDark] = useState(true);
@@ -21,7 +23,7 @@ const TechStackMarquee = () => {
   return (
     <div className={isDark ? 'dark' : ''}>
       <section className='bg-section dark:bg-darklight'  style={{ padding: '15px' }} id='techstack'>
-        <div className='container mx-auto max-w-60xl px-4'>
+        <div className='container mx-auto max-w-6xl px-4'>
           {/* Header */}
           <div
             className='flex gap-2 items-center justify-center'
@@ -83,24 +85,7 @@ const TechStackMarquee = () => {
           </div>
         </div>
 
-        <style>{`
-          @keyframes marquee {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-          
-          .animate-marquee {
-            animation: marquee 60s linear infinite;
-          }
-          
-          .animate-marquee:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
+        
       </section>
     </div>
   );
